@@ -6,7 +6,7 @@
         </template>
     </div>
     <div x-show="activeTab === 'Identity' ">
-        <x-molecules.card-heading-field heading='Patient' checkbox_name="patient_checkbox" />
+        <x-molecules.card-heading-field heading='Patient' checkbox_name="identity_checkbox" />
         <x-organisms.identity-form />
     </div>
     <div x-show="activeTab === 'Contact' ">

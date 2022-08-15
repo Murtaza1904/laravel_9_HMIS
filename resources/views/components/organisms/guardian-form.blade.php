@@ -15,7 +15,7 @@
         </div>
         <div class="row">
             <div class="col-3">
-                <x-molecules.radio-field label="Gender" radioName="guardian.gender" errorName="guaedian.gender" message="$message" />
+                {{-- <x-molecules.radio-field label="Gender" radioName="guardian.gender" errorName="guaedian.gender" message="$message" /> --}}
             </div>
             <div class="col-9">
                 <x-molecules.select-field label="Relationship" selectName="guardian.relationship"

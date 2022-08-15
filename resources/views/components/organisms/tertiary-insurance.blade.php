@@ -66,8 +66,8 @@
                     errorName="tertiary_insurance.subscriber_employer" message="$message" />
             </div>
             <div class="col">
-                <x-molecules.radio-field label="Gender" radioName="tertiary_insurance.gender"
-                    errorName="tertiary_insurance.gender" message="$message" />
+                {{-- <x-molecules.radio-field label="Gender" radioName="tertiary_insurance.gender"
+                    errorName="tertiary_insurance.gender" message="$message" /> --}}
             </div>
         </div>
         <div class="row">

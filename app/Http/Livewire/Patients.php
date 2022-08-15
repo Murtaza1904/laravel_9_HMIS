@@ -65,9 +65,9 @@ class Patients extends Component
     // {
     public function rules()
     {
+        return  (new PatientRequest())->rules();
             // return array_merge(
-            // return  (new PatientRequest())->rules();
-                (new ContactRequest())->rules();
+                // (new ContactRequest())->rules();
                 // (new ChoiceRequest())->rules(),
                 // (new EmployerRequest())->rules(),
                 // (new StatsRequest())->rules(),
@@ -95,19 +95,19 @@ class Patients extends Component
 
     public function patientIdGenerator()
     {
-        // $this->patient_id ++;
+        $this->patient_id ++;
     }
 
     public function store()
     {
         if($this->identity_checkbox == 'checked')
-            {
-                $this->validate();
-                $this->patient->save();
-                session()->flash('success','Created Successfully.');
-                $this->resetInputFields();
-                // $this->patientIdGenerator();
-            }
+        {
+            $this->validate();
+            $this->patient->save();
+            session()->flash('success','Created Successfully.');
+            $this->resetInputFields();
+            $this->patientIdGenerator();
+        }
         if($this->contact_checkbox == 'checked')
         {
             $this->validate();

@@ -13,7 +13,7 @@ class Button extends Component
 
     public function __construct($redirect, $class, $text)
     {
-        $this->redirect == $redirect;
+        $this->redirect = $redirect;
         $this->class = $class;
         $this->text = $text;
     }

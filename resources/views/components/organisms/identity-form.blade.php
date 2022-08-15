@@ -4,7 +4,7 @@
     <form class="container">
 
         <!-- Patient id  generated from patient class-->
-        {{-- <input type="hidden" value="{{ $patient_id }}" wire:model.lazy='id'> --}}
+        <input type="hidden" value="1" wire:model.lazy='patient.id'>
         <!-- patient id is  empty -->
 
         <div class="row">
@@ -48,8 +48,9 @@
 
             <div class="col">
                 <!-- Patient marital status  -->
-                {{-- <x-molecules.select-field label="Marital Status" selectName="patient.marital_status"
-                    errorName="patient.marital_status" message="$message" :cities="$cities" item="city" /> --}}
+                <x-molecules.select-field label="Marital Status" selectName="patient.marital_status"
+                    errorName="patient.marital_status" message="$message" />
+                    {{-- :cities="$cities" item="city" /> --}}
                 <!-- print error if marital status field is empty -->
             </div>
 
