@@ -1,6 +1,6 @@
 <div x-data="{ create: false }">
     <div x-show="create === true">
-        @include('livewire.components.templates.indetity-page')
+        @include('components.templates.indetity-page')
         @if (session('success'))
             <div x-model="create = false"></div>
             <script>
