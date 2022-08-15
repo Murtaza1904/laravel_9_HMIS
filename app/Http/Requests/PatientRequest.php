@@ -11,6 +11,8 @@ class PatientRequest extends FormRequest
         return true;
     }
 
+    /* Patient identity form validation rules */
+
     public function rules():array
     {
         return[
