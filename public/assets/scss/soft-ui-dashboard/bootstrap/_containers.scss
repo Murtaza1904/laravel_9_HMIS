@@ -3,7 +3,7 @@
 // Set the container width, and override it for fixed navbars in media queries.
 
 @if $enable-container-classes {
-  // Single container class with breakpoint malivewire:components.widths
+  // Single container class with breakpoint max-widths
   .container,
   // 100% wide container at all breakpoints
   .container-fluid {
@@ -11,14 +11,14 @@
   }
 
   // Responsive containers that are 100% wide until a breakpoint
-  @each $breakpoint, $container-malivewire:components.width in $container-malivewire:components.widths {
+  @each $breakpoint, $container-max-width in $container-max-widths {
     .container-#{$breakpoint} {
       @extend .container-fluid;
     }
 
     @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
       %responsive-container-#{$breakpoint} {
-        malivewire:components.width: $container-malivewire:components.width;
+        max-width: $container-max-width;
       }
 
       // Extend each breakpoint which is smaller or equal to the current breakpoint

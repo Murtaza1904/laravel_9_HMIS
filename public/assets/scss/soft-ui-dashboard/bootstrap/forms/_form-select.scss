@@ -20,7 +20,7 @@
   background-size: $form-select-bg-size;
   border: $form-select-border-width solid $form-select-border-color;
   @include border-radius($form-select-border-radius, 0);
-  @include bolivewire:components.shadow($form-select-bolivewire:components.shadow);
+  @include box-shadow($form-select-box-shadow);
   @include transition($form-select-transition);
   appearance: none;
 
@@ -28,10 +28,10 @@
     border-color: $form-select-focus-border-color;
     outline: 0;
     @if $enable-shadows {
-      @include bolivewire:components.shadow($form-select-bolivewire:components.shadow, $form-select-focus-bolivewire:components.shadow);
+      @include box-shadow($form-select-box-shadow, $form-select-focus-box-shadow);
     } @else {
       // Avoid using mixin so we can pass custom focus shadow properly
-      bolivewire:components.shadow: $form-select-focus-bolivewire:components.shadow;
+      box-shadow: $form-select-focus-box-shadow;
     }
   }
 
@@ -57,7 +57,7 @@
 .form-select-sm {
   padding-top: $form-select-padding-y-sm;
   padding-bottom: $form-select-padding-y-sm;
-  padding-left: $form-select-padding-livewire:components.sm;
+  padding-left: $form-select-padding-x-sm;
   @include font-size($form-select-font-size-sm);
   @include border-radius($form-select-border-radius-sm);
 }
@@ -65,7 +65,7 @@
 .form-select-lg {
   padding-top: $form-select-padding-y-lg;
   padding-bottom: $form-select-padding-y-lg;
-  padding-left: $form-select-padding-livewire:components.lg;
+  padding-left: $form-select-padding-x-lg;
   @include font-size($form-select-font-size-lg);
   @include border-radius($form-select-border-radius-lg);
 }

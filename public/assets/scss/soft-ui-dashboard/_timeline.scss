@@ -121,7 +121,7 @@
 
     @include media-breakpoint-up(lg) {
         .timeline-content {
-            malivewire:components.width: 30rem;
+            max-width: 30rem;
         }
     }
 }

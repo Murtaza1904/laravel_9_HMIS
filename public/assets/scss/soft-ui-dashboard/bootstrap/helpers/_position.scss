@@ -5,7 +5,7 @@
   top: 0;
   right: 0;
   left: 0;
-  z-index: $zindelivewire:components.fixed;
+  z-index: $zindex-fixed;
 }
 
 .fixed-bottom {
@@ -13,7 +13,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: $zindelivewire:components.fixed;
+  z-index: $zindex-fixed;
 }
 
 // Responsive sticky top and bottom
@@ -24,13 +24,13 @@
     .sticky#{$infix}-top {
       position: sticky;
       top: 0;
-      z-index: $zindelivewire:components.sticky;
+      z-index: $zindex-sticky;
     }
 
     .sticky#{$infix}-bottom {
       position: sticky;
       bottom: 0;
-      z-index: $zindelivewire:components.sticky;
+      z-index: $zindex-sticky;
     }
   }
 }

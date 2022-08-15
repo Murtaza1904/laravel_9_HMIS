@@ -31,7 +31,7 @@
   --#{$prefix}dropdown-inner-border-radius: #{$dropdown-inner-border-radius};
   --#{$prefix}dropdown-divider-bg: #{$dropdown-divider-bg};
   --#{$prefix}dropdown-divider-margin-y: #{$dropdown-divider-margin-y};
-  --#{$prefix}dropdown-bolivewire:components.shadow: #{$dropdown-bolivewire:components.shadow};
+  --#{$prefix}dropdown-box-shadow: #{$dropdown-box-shadow};
   --#{$prefix}dropdown-link-color: #{$dropdown-link-color};
   --#{$prefix}dropdown-link-hover-color: #{$dropdown-link-hover-color};
   --#{$prefix}dropdown-link-hover-bg: #{$dropdown-link-hover-bg};
@@ -46,7 +46,7 @@
   // scss-docs-end dropdown-css-vars
 
   position: absolute;
-  z-index: $zindelivewire:components.dropdown;
+  z-index: $zindex-dropdown;
   display: none; // none by default, but block on "open" of the menu
   min-width: var(--#{$prefix}dropdown-min-width);
   padding: var(--#{$prefix}dropdown-padding-y) var(--#{$prefix}dropdown-padding-x);
@@ -59,7 +59,7 @@
   background-clip: padding-box;
   border: var(--#{$prefix}dropdown-border-width) solid var(--#{$prefix}dropdown-border-color);
   @include border-radius(var(--#{$prefix}dropdown-border-radius));
-  @include bolivewire:components.shadow(var(--#{$prefix}dropdown-bolivewire:components.shadow));
+  @include box-shadow(var(--#{$prefix}dropdown-box-shadow));
 
   &[data-bs-popper] {
     top: 100%;
@@ -235,7 +235,7 @@
   --#{$prefix}dropdown-color: #{$dropdown-dark-color};
   --#{$prefix}dropdown-bg: #{$dropdown-dark-bg};
   --#{$prefix}dropdown-border-color: #{$dropdown-dark-border-color};
-  --#{$prefix}dropdown-bolivewire:components.shadow: #{$dropdown-dark-bolivewire:components.shadow};
+  --#{$prefix}dropdown-box-shadow: #{$dropdown-dark-box-shadow};
   --#{$prefix}dropdown-link-color: #{$dropdown-dark-link-color};
   --#{$prefix}dropdown-link-hover-color: #{$dropdown-dark-link-hover-color};
   --#{$prefix}dropdown-divider-bg: #{$dropdown-dark-divider-bg};

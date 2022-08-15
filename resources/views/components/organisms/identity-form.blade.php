@@ -1,10 +1,10 @@
 <!-- Patient Identity Form (mandatory) -->
-<div class="card-body plivewire:components.0 pt-0 pb-2">
+<div class="card-body px-0 pt-0 pb-2">
     
     <form class="container">
 
         <!-- Patient id  generated from patient class-->
-        <input type="hidden" value="{{ $patient_id }}" wire:model.lazy='id'>
+        {{-- <input type="hidden" value="{{ $patient_id }}" wire:model.lazy='id'> --}}
         <!-- patient id is  empty -->
 
         <div class="row">
@@ -37,6 +37,7 @@
 
         </div>
         <div class="row">
+
             <div class="col">
                 <!-- Patient gender  -->
                 <x-molecules.radio-field label="Gender" radioName="patient.gender"
@@ -47,10 +48,11 @@
 
             <div class="col">
                 <!-- Patient marital status  -->
-                <x-molecules.select-field label="Marital Status" selectName="patient.marital_status"
-                    errorName="patient.marital_status" message="$message" />
+                {{-- <x-molecules.select-field label="Marital Status" selectName="patient.marital_status"
+                    errorName="patient.marital_status" message="$message" :cities="$cities" item="city" /> --}}
                 <!-- print error if marital status field is empty -->
             </div>
+
         </div>
 
         <div class="row">

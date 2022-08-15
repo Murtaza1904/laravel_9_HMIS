@@ -4,7 +4,7 @@
   .dropstart,
   .dropend {
     .dropdown-menu {
-      bolivewire:components.shadow: $dropdown-bolivewire:components.shadow;
+      box-shadow: $dropdown-box-shadow;
       cursor: pointer;
     }
 
@@ -69,7 +69,7 @@
       transform: $dropdown-transform;
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
-      will-change: transform,bolivewire:components.shadow;
+      will-change: transform,box-shadow;
     }
 
     &.dropdown-hover:hover > .dropdown-menu,
@@ -137,8 +137,8 @@
         transition: $dropdown-transition;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-        will-change: transform,bolivewire:components.shadow;
-        bolivewire:components.shadow: $dropdown-bolivewire:components.shadow;
+        will-change: transform,box-shadow;
+        box-shadow: $dropdown-box-shadow;
 
         &:before {
           font-family: "FontAwesome";
@@ -173,7 +173,7 @@
       overflow: scroll;
       position: relative;
       transform: none !important;
-      bolivewire:components.shadow: none !important;
+      box-shadow: none !important;
     }
   }
 
@@ -187,8 +187,8 @@
       transition: $dropdown-transition;
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
-      will-change: transform,bolivewire:components.shadow;
-      bolivewire:components.shadow: $dropdown-bolivewire:components.shadow;
+      will-change: transform,box-shadow;
+      box-shadow: $dropdown-box-shadow;
 
       &:before {
         font-family: "FontAwesome";
@@ -243,7 +243,7 @@
     .dropdown {
       .dropdown-menu.show {
         transform: $dropdown-transform-responsive-show;
-        bolivewire:components.shadow: none;
+        box-shadow: none;
         margin-bottom: 1rem;  
       }
     }

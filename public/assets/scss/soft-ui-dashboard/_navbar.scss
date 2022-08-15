@@ -1,5 +1,5 @@
 .navbar {
-  bolivewire:components.shadow: $navbar-bolivewire:components.shadow;
+  box-shadow: $navbar-box-shadow;
 
   .navbar-brand {
     color: $dark;
@@ -82,7 +82,7 @@
   .navbar-toggler{
     border: none;
     &:focus{
-      bolivewire:components.shadow: none;
+      box-shadow: none;
     }
   }
 }
@@ -154,11 +154,11 @@
       &:not(.sidenav).navbar-main {
         .navbar-collapse {
           display: flex !important;
-          flelivewire:components.basis: auto;
+          flex-basis: auto;
         }
 
         .navbar-nav {
-          flelivewire:components.direction: row;
+          flex-direction: row;
         }
       }
 
@@ -168,7 +168,7 @@
   .navbar {
     &.navbar-transparent {
       .navbar-collapse {
-        bolivewire:components.shadow: $bolivewire:components.shadow-lg;
+        box-shadow: $box-shadow-lg;
       }
     }
   }

@@ -1,6 +1,6 @@
-@each $name, $value in $malivewire:components.width-dim{
-  .malivewire:components.width-#{$name} {
-    malivewire:components.width: $value !important;
+@each $name, $value in $max-width-dim{
+  .max-width-#{$name} {
+    max-width: $value !important;
   }
 }
 

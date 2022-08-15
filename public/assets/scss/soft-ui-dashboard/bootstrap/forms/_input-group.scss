@@ -5,7 +5,7 @@
 .input-group {
   position: relative;
   display: flex;
-  flelivewire:components.wrap: wrap; // For form validation feedback
+  flex-wrap: wrap; // For form validation feedback
   align-items: stretch;
   width: 100%;
 
@@ -14,7 +14,7 @@
     position: relative; // For focus state's z-index
     flex: 1 1 auto;
     width: 1%;
-    min-width: 0; // https://stackoverflow.com/questions/36247140/why-dont-flelivewire:components.items-shrink-past-content-size
+    min-width: 0; // https://stackoverflow.com/questions/36247140/why-dont-flex-items-shrink-past-content-size
   }
 
   // Bring the "active" form control to the top of surrounding elements
@@ -67,7 +67,7 @@
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn {
-  padding: $input-padding-y-lg $input-padding-livewire:components.lg;
+  padding: $input-padding-y-lg $input-padding-x-lg;
   @include font-size($input-font-size-lg);
   @include border-radius($input-border-radius-lg);
 }
@@ -76,7 +76,7 @@
 .input-group-sm > .form-select,
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn {
-  padding: $input-padding-y-sm $input-padding-livewire:components.sm;
+  padding: $input-padding-y-sm $input-padding-x-sm;
   @include font-size($input-font-size-sm);
   @include border-radius($input-border-radius-sm);
 }

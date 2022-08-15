@@ -6,7 +6,7 @@
     right: $fixed-plugin-right;
     font-size: $font-size-xl;
     z-index: $fixed-plugin-button-z-index;
-    bolivewire:components.shadow: $fixed-plugin-bolivewire:components.shadow;
+    box-shadow: $fixed-plugin-box-shadow;
     cursor: pointer;
     i{
       pointer-events: none;

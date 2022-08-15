@@ -8,14 +8,14 @@ use Illuminate\View\Component;
 class Select extends Component
 {
     public $selectName;
-    public $collection;
-    public $item;
+    // public $collection;
+    // public $item;
 
-    public function __construct($selectName,$collection, $item) 
+    public function __construct($selectName) 
     {
         $this->selectName = $selectName;
-        $this->collection = $collection;
-        $this->item = $item;
+        // $this->collection = $collection;
+        // $this->item = $item;
     }
 
 

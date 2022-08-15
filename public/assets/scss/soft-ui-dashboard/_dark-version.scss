@@ -91,7 +91,7 @@
   .dropdown .dropdown-menu,
   .kanban-board {
     background: $dark-version-card-bg-color;
-    bolivewire:components.shadow: $dark-version-card-bolivewire:components.shadow;
+    box-shadow: $dark-version-card-box-shadow;
 
     .card-header {
       background: transparent;
@@ -201,7 +201,7 @@
   .nav {
     &.bg-white {
       background-color: $dark-version-card-bg-color !important;
-      bolivewire:components.shadow: $dark-version-card-bolivewire:components.shadow;
+      box-shadow: $dark-version-card-box-shadow;
     }
 
     .nav-link[data-scroll]:hover {
@@ -211,7 +211,7 @@
 
   .toast {
     background-color: $dark-version-card-bg-color !important;
-    bolivewire:components.shadow: $dark-version-card-bolivewire:components.shadow;
+    box-shadow: $dark-version-card-box-shadow;
 
     .toast-header {
       background: transparent;
@@ -235,7 +235,7 @@
     }
     .choices__list.choices__list--dropdown {
       background: $dark-version-card-bg-color;
-      bolivewire:components.shadow: $dark-version-card-bolivewire:components.shadow;
+      box-shadow: $dark-version-card-box-shadow;
     }
   }
 
@@ -280,7 +280,7 @@
           }
 
           &.active {
-            bolivewire:components.shadow: $dark-nav-link-active-shadow;
+            box-shadow: $dark-nav-link-active-shadow;
             color: $dark;
           }
         }

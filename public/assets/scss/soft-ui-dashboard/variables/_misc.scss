@@ -11,13 +11,13 @@ $gradient-animation-bg-size:          400% 400% !default;
 
 // Device Wrapper
 $device-wrapper-radius:               3.5rem !default;
-$device-wrapper-bolivewire:components.shadow:           0 12px 15px rgba(140, 152, 164, 0.1) !default;
+$device-wrapper-box-shadow:           0 12px 15px rgba(140, 152, 164, 0.1) !default;
 $device-wrapper-animation:            gradient 10s ease infinite !default;
 
 
 // Nav pills
 $nav-pills-link-border-radius:        0.5rem !default;
-$nav-pills-link-bolivewire:components.shadow:           0px 1px 5px 1px #ddd !default;
+$nav-pills-link-box-shadow:           0px 1px 5px 1px #ddd !default;
 $nav-pills-link-active-padding:       7px 15px !default;
 $nav-pills-link-active-margin:        1px !default;
 $nav-pills-link-active-animation:     .2s ease !default;

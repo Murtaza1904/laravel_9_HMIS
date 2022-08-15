@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-$include-column-bolivewire:components.sizing: true !default;
+$include-column-box-sizing: true !default;
 
 @import "functions";
 @import "variables";
@@ -33,10 +33,10 @@ $utilities: map-get-multiple(
     "display",
     "order",
     "flex",
-    "flelivewire:components.direction",
-    "flelivewire:components.grow",
-    "flelivewire:components.shrink",
-    "flelivewire:components.wrap",
+    "flex-direction",
+    "flex-grow",
+    "flex-shrink",
+    "flex-wrap",
     "justify-content",
     "align-items",
     "align-content",

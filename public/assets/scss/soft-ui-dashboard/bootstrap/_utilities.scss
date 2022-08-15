@@ -52,12 +52,12 @@ $utilities: map-merge(
     // scss-docs-end utils-display
     // scss-docs-start utils-shadow
     "shadow": (
-      property: bolivewire:components.shadow,
+      property: box-shadow,
       class: shadow,
       values: (
-        null: $bolivewire:components.shadow,
-        sm: $bolivewire:components.shadow-sm,
-        lg: $bolivewire:components.shadow-lg,
+        null: $box-shadow,
+        sm: $box-shadow-sm,
+        lg: $box-shadow-lg,
         none: none,
       )
     ),
@@ -172,8 +172,8 @@ $utilities: map-merge(
         auto: auto
       )
     ),
-    "malivewire:components.width": (
-      property: malivewire:components.width,
+    "max-width": (
+      property: max-width,
       class: mw,
       values: (100: 100%)
     ),
@@ -198,8 +198,8 @@ $utilities: map-merge(
         auto: auto
       )
     ),
-    "malivewire:components.height": (
-      property: malivewire:components.height,
+    "max-height": (
+      property: max-height,
       class: mh,
       values: (100: 100%)
     ),
@@ -221,33 +221,33 @@ $utilities: map-merge(
       property: flex,
       values: (fill: 1 1 auto)
     ),
-    "flelivewire:components.direction": (
+    "flex-direction": (
       responsive: true,
-      property: flelivewire:components.direction,
+      property: flex-direction,
       class: flex,
       values: row column row-reverse column-reverse
     ),
-    "flelivewire:components.grow": (
+    "flex-grow": (
       responsive: true,
-      property: flelivewire:components.grow,
+      property: flex-grow,
       class: flex,
       values: (
         grow-0: 0,
         grow-1: 1,
       )
     ),
-    "flelivewire:components.shrink": (
+    "flex-shrink": (
       responsive: true,
-      property: flelivewire:components.shrink,
+      property: flex-shrink,
       class: flex,
       values: (
         shrink-0: 0,
         shrink-1: 1,
       )
     ),
-    "flelivewire:components.wrap": (
+    "flex-wrap": (
       responsive: true,
-      property: flelivewire:components.wrap,
+      property: flex-wrap,
       class: flex,
       values: wrap nowrap wrap-reverse
     ),
@@ -255,8 +255,8 @@ $utilities: map-merge(
       responsive: true,
       property: justify-content,
       values: (
-        start: flelivewire:components.start,
-        end: flelivewire:components.end,
+        start: flex-start,
+        end: flex-end,
         center: center,
         between: space-between,
         around: space-around,
@@ -267,8 +267,8 @@ $utilities: map-merge(
       responsive: true,
       property: align-items,
       values: (
-        start: flelivewire:components.start,
-        end: flelivewire:components.end,
+        start: flex-start,
+        end: flex-end,
         center: center,
         baseline: baseline,
         stretch: stretch,
@@ -278,8 +278,8 @@ $utilities: map-merge(
       responsive: true,
       property: align-content,
       values: (
-        start: flelivewire:components.start,
-        end: flelivewire:components.end,
+        start: flex-start,
+        end: flex-end,
         center: center,
         between: space-between,
         around: space-around,
@@ -291,8 +291,8 @@ $utilities: map-merge(
       property: align-self,
       values: (
         auto: auto,
-        start: flelivewire:components.start,
-        end: flelivewire:components.end,
+        start: flex-start,
+        end: flex-end,
         center: center,
         baseline: baseline,
         stretch: stretch,

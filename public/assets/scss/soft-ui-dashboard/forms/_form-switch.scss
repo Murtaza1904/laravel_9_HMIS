@@ -13,13 +13,13 @@
       border-radius: 50%;
       position: absolute;
       background-color: $white;
-      transform: translateX($form-switch-translate-livewire:components.start);
-      bolivewire:components.shadow: $form-switch-round-bolivewire:components.shadow;
+      transform: translateX($form-switch-translate-x-start);
+      box-shadow: $form-switch-round-box-shadow;
       top: 1px;
     }
 
     &:checked:after {
-      transform: translateX($form-switch-translate-livewire:components.end);
+      transform: translateX($form-switch-translate-x-end);
     }
 
     &:checked {

@@ -112,7 +112,7 @@
 		border: $avatar-group-border solid $card-bg;
 
 		&:hover {
-			z-index: $avatar-group-zindelivewire:components.hover;
+			z-index: $avatar-group-zindex-hover;
 		}
 	}
 

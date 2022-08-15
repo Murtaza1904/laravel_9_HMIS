@@ -15,7 +15,7 @@
   --#{$prefix}pagination-hover-border-color: #{$pagination-hover-border-color};
   --#{$prefix}pagination-focus-color: #{$pagination-focus-color};
   --#{$prefix}pagination-focus-bg: #{$pagination-focus-bg};
-  --#{$prefix}pagination-focus-bolivewire:components.shadow: #{$pagination-focus-bolivewire:components.shadow};
+  --#{$prefix}pagination-focus-box-shadow: #{$pagination-focus-box-shadow};
   --#{$prefix}pagination-active-color: #{$pagination-active-color};
   --#{$prefix}pagination-active-bg: #{$pagination-active-bg};
   --#{$prefix}pagination-active-border-color: #{$pagination-active-border-color};
@@ -52,7 +52,7 @@
     color: var(--#{$prefix}pagination-focus-color);
     background-color: var(--#{$prefix}pagination-focus-bg);
     outline: $pagination-focus-outline;
-    bolivewire:components.shadow: var(--#{$prefix}pagination-focus-bolivewire:components.shadow);
+    box-shadow: var(--#{$prefix}pagination-focus-box-shadow);
   }
 
   &.active,
@@ -103,9 +103,9 @@
 //
 
 .pagination-lg {
-  @include pagination-size($pagination-padding-y-lg, $pagination-padding-livewire:components.lg, $font-size-lg, $pagination-border-radius-lg);
+  @include pagination-size($pagination-padding-y-lg, $pagination-padding-x-lg, $font-size-lg, $pagination-border-radius-lg);
 }
 
 .pagination-sm {
-  @include pagination-size($pagination-padding-y-sm, $pagination-padding-livewire:components.sm, $font-size-sm, $pagination-border-radius-sm);
+  @include pagination-size($pagination-padding-y-sm, $pagination-padding-x-sm, $font-size-sm, $pagination-border-radius-sm);
 }

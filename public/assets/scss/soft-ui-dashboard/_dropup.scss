@@ -1,6 +1,6 @@
 .dropup {
   .dropdown-menu {
-    bolivewire:components.shadow: $dropdown-bolivewire:components.shadow;
+    box-shadow: $dropdown-box-shadow;
     transition: $dropdown-transition;
     cursor: pointer;
     top: auto !important;
@@ -13,7 +13,7 @@
     transform: $dropup-transform;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    will-change: transform,bolivewire:components.shadow;
+    will-change: transform,box-shadow;
 
     &.show{
       pointer-events: auto;

@@ -24,7 +24,7 @@
   // scss-docs-end list-group-css-vars
 
   display: flex;
-  flelivewire:components.direction: column;
+  flex-direction: column;
 
   // No need to set list-style: none; since .list-group-item is block level
   padding-left: 0; // reset padding because ul and ol
@@ -123,7 +123,7 @@
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
     .list-group-horizontal#{$infix} {
-      flelivewire:components.direction: row;
+      flex-direction: row;
 
       > .list-group-item {
         &:first-child {

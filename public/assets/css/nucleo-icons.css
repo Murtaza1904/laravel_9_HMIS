@@ -21,7 +21,7 @@ License - nucleoapp.com/license/
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  -moz-oslivewire:components.font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /*------------------------
@@ -273,7 +273,7 @@ License - nucleoapp.com/license/
   content: "\ea15";
 }
 
-.ni-bolivewire:components.2::before {
+.ni-box-2::before {
   content: "\ea16";
 }
 

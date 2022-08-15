@@ -20,7 +20,7 @@
       .content-center,
       .content-left {
         min-height: $card-bg-content-min-height;
-        malivewire:components.width: $card-bg-content-malivewire:components.width;
+        max-width: $card-bg-content-max-width;
         padding-top: $card-bg-content-pt;
         padding-bottom: $card-bg-content-pb;
       }

@@ -1,7 +1,7 @@
 // scss-docs-start stacks
 .hstack {
   display: flex;
-  flelivewire:components.direction: row;
+  flex-direction: row;
   align-items: center;
   align-self: stretch;
 }
@@ -9,7 +9,7 @@
 .vstack {
   display: flex;
   flex: 1 1 auto;
-  flelivewire:components.direction: column;
+  flex-direction: column;
   align-self: stretch;
 }
 // scss-docs-end stacks
