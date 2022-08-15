@@ -1,4 +1,4 @@
-{{-- <div class="card-body plivewire:components.0 pt-0 pb-2">
+<div class="card-body plivewire:components.0 pt-0 pb-2">
     <form class="container">
         <div class="row">
             <div class="col">
@@ -147,4 +147,4 @@
         <br>
         <livewire:components.atoms.error-if-not-checked />
     </form>
-</div> --}}
+</div>

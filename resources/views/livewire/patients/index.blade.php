@@ -1,15 +1,15 @@
-<div livewire:components.data="{ create: false }">
-    <div livewire:components.show="create === true">
+<div x-data="{ create: false }">
+    <div x-show="create === true">
         @include('livewire.components.templates.indetity-page')
         @if (session('success'))
-            <div livewire:components.model="create = false"></div>
+            <div x-model="create = false"></div>
             <script>
                 swal(
                     '<?php echo session('success'); ?>', "", "success")
             </script>
         @endif
     </div>
-    <div livewire:components.show="create === false">
+    <div x-show="create === false">
         <div class="card-header pb-0">
             <div class="row">
                 <div class="col-lg-3">
@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <button livewire:components.on:click="create = true" class="btn btn-primary">Add New</button>
+                    <button x-on:click="create = true" class="btn btn-primary">Add New</button>
                 </div>
             </div>
         </div>
