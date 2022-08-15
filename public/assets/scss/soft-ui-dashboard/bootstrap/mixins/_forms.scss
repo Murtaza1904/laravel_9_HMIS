@@ -21,7 +21,7 @@
   $icon,
   $tooltip-color: color-contrast($color),
   $tooltip-bg-color: rgba($color, $form-feedback-tooltip-opacity),
-  $focus-box-shadow: 0 0 $input-btn-focus-blur $input-focus-width rgba($color, $input-btn-focus-color-opacity)
+  $focus-bolivewire:components.shadow: 0 0 $input-btn-focus-blur $input-focus-width rgba($color, $input-btn-focus-color-opacity)
 ) {
   .#{$state}-feedback {
     display: none;
@@ -37,7 +37,7 @@
     top: 100%;
     z-index: 5;
     display: none;
-    max-width: 100%; // Contain to parent when possible
+    malivewire:components.width: 100%; // Contain to parent when possible
     padding: $form-feedback-tooltip-padding-y $form-feedback-tooltip-padding-x;
     margin-top: .1rem;
     @include font-size($form-feedback-tooltip-font-size);
@@ -68,7 +68,7 @@
 
       &:focus {
         border-color: $color;
-        box-shadow: $focus-box-shadow;
+        bolivewire:components.shadow: $focus-bolivewire:components.shadow;
       }
     }
   }
@@ -99,7 +99,7 @@
 
       &:focus {
         border-color: $color;
-        box-shadow: $focus-box-shadow;
+        bolivewire:components.shadow: $focus-bolivewire:components.shadow;
       }
     }
   }
@@ -121,7 +121,7 @@
       }
 
       &:focus {
-        box-shadow: $focus-box-shadow;
+        bolivewire:components.shadow: $focus-bolivewire:components.shadow;
       }
 
       ~ .form-check-label {

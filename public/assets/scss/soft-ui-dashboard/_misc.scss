@@ -1,7 +1,7 @@
 // Blur effect
 
 .blur {
-  box-shadow: $blur-box-shadow;
+  bolivewire:components.shadow: $blur-bolivewire:components.shadow;
   -webkit-backdrop-filter: $blur-backdrop-filter;
   backdrop-filter: $blur-backdrop-filter;
   background-color: $card-background-blur !important;
@@ -24,11 +24,11 @@
 }
 
 .shadow-blur {
-  box-shadow: $shadow-blur-box-shadow !important;
+  bolivewire:components.shadow: $shadow-blur-bolivewire:components.shadow !important;
 }
 
 .shadow-card {
-  box-shadow: $card-box-shadow !important;
+  bolivewire:components.shadow: $card-bolivewire:components.shadow !important;
 }
 
 .navbar-blur {
@@ -172,8 +172,8 @@ hr.horizontal {
   border-style: dashed;
 }
 
-.z-index-sticky {
-  z-index: $zindex-sticky;
+.z-indelivewire:components.sticky {
+  z-index: $zindelivewire:components.sticky;
 }
 
 
@@ -185,7 +185,7 @@ hr.horizontal {
   margin-bottom: $waves-margin-bottom;
   /*Fix for safari gap*/
   min-height: $waves-min-height;
-  max-height: $waves-max-height;
+  malivewire:components.height: $waves-malivewire:components.height;
 
   &.waves-sm {
     height: $waves-height-sm;
@@ -287,13 +287,13 @@ hr.horizontal {
 }
 
 // Overflow directional
-.overflow-x-hidden {
+.overflow-livewire:components.hidden {
   overflow-x: hidden;
 }
 .overflow-y-hidden {
   overflow-y: hidden;
 }
-.overflow-x-scroll {
+.overflow-livewire:components.scroll {
   overflow-x: scroll;
 }
 .overflow-y-scroll {

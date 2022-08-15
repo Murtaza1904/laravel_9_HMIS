@@ -21,7 +21,7 @@
   --#{$prefix}accordion-btn-icon-transition: #{$accordion-icon-transition};
   --#{$prefix}accordion-btn-active-icon: #{escape-svg($accordion-button-active-icon)};
   --#{$prefix}accordion-btn-focus-border-color: #{$accordion-button-focus-border-color};
-  --#{$prefix}accordion-btn-focus-box-shadow: #{$accordion-button-focus-box-shadow};
+  --#{$prefix}accordion-btn-focus-bolivewire:components.shadow: #{$accordion-button-focus-bolivewire:components.shadow};
   --#{$prefix}accordion-body-padding-x: #{$accordion-body-padding-x};
   --#{$prefix}accordion-body-padding-y: #{$accordion-body-padding-y};
   --#{$prefix}accordion-active-color: #{$accordion-button-active-color};
@@ -47,7 +47,7 @@
   &:not(.collapsed) {
     color: var(--#{$prefix}accordion-active-color);
     background-color: var(--#{$prefix}accordion-active-bg);
-    box-shadow: inset 0 calc(var(--#{$prefix}accordion-border-width) * -1) 0 var(--#{$prefix}accordion-border-color); // stylelint-disable-line function-disallowed-list
+    bolivewire:components.shadow: inset 0 calc(var(--#{$prefix}accordion-border-width) * -1) 0 var(--#{$prefix}accordion-border-color); // stylelint-disable-line function-disallowed-list
 
     &::after {
       background-image: var(--#{$prefix}accordion-btn-active-icon);
@@ -57,7 +57,7 @@
 
   // Accordion icon
   &::after {
-    flex-shrink: 0;
+    flelivewire:components.shrink: 0;
     width: var(--#{$prefix}accordion-btn-icon-width);
     height: var(--#{$prefix}accordion-btn-icon-width);
     margin-left: auto;
@@ -76,7 +76,7 @@
     z-index: 3;
     border-color: var(--#{$prefix}accordion-btn-focus-border-color);
     outline: 0;
-    box-shadow: var(--#{$prefix}accordion-btn-focus-box-shadow);
+    bolivewire:components.shadow: var(--#{$prefix}accordion-btn-focus-bolivewire:components.shadow);
   }
 }
 

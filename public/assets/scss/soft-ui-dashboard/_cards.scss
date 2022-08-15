@@ -1,5 +1,5 @@
 .card {
-  box-shadow: $card-box-shadow;
+  bolivewire:components.shadow: $card-bolivewire:components.shadow;
   .card-header {
     padding: $card-header-padding;
   }
@@ -11,7 +11,7 @@
 
   &.card-plain {
     background-color: $card-plain-bg-color;
-    box-shadow: $card-plain-box-shadow;
+    bolivewire:components.shadow: $card-plain-bolivewire:components.shadow;
   }
 
   .card-footer {

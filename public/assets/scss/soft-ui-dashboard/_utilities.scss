@@ -39,15 +39,15 @@ $utilities: (
   // scss-docs-end utils-display
   // scss-docs-start utils-shadow
   "shadow": (
-    property: box-shadow,
+    property: bolivewire:components.shadow,
     class: shadow,
     values: (
-      null: $box-shadow,
-      xs: $box-shadow-xs,
-      sm: $box-shadow-sm,
-      md: $box-shadow,
-      lg: $box-shadow-lg,
-      xl: $box-shadow-xl,
+      null: $bolivewire:components.shadow,
+      xs: $bolivewire:components.shadow-xs,
+      sm: $bolivewire:components.shadow-sm,
+      md: $bolivewire:components.shadow,
+      lg: $bolivewire:components.shadow-lg,
+      xl: $bolivewire:components.shadow-xl,
       none: none,
     )
   ),
@@ -160,8 +160,8 @@ $utilities: (
     class: w,
     values: $width
   ),
-  "max-width": (
-    property: max-width,
+  "malivewire:components.width": (
+    property: malivewire:components.width,
     class: mw,
     values: (100: 100%)
   ),
@@ -186,8 +186,8 @@ $utilities: (
       auto: auto
     )
   ),
-  "max-height": (
-    property: max-height,
+  "malivewire:components.height": (
+    property: malivewire:components.height,
     class: mh,
     values: (100: 100%)
   ),
@@ -223,33 +223,33 @@ $utilities: (
     property: flex,
     values: (fill: 1 1 auto)
   ),
-  "flex-direction": (
+  "flelivewire:components.direction": (
     responsive: true,
-    property: flex-direction,
+    property: flelivewire:components.direction,
     class: flex,
     values: row column row-reverse column-reverse
   ),
-  "flex-grow": (
+  "flelivewire:components.grow": (
     responsive: true,
-    property: flex-grow,
+    property: flelivewire:components.grow,
     class: flex,
     values: (
       grow-0: 0,
       grow-1: 1,
     )
   ),
-  "flex-shrink": (
+  "flelivewire:components.shrink": (
     responsive: true,
-    property: flex-shrink,
+    property: flelivewire:components.shrink,
     class: flex,
     values: (
       shrink-0: 0,
       shrink-1: 1,
     )
   ),
-  "flex-wrap": (
+  "flelivewire:components.wrap": (
     responsive: true,
-    property: flex-wrap,
+    property: flelivewire:components.wrap,
     class: flex,
     values: wrap nowrap wrap-reverse
   ),
@@ -263,8 +263,8 @@ $utilities: (
     responsive: true,
     property: justify-content,
     values: (
-      start: flex-start,
-      end: flex-end,
+      start: flelivewire:components.start,
+      end: flelivewire:components.end,
       center: center,
       between: space-between,
       around: space-around,
@@ -275,8 +275,8 @@ $utilities: (
     responsive: true,
     property: align-items,
     values: (
-      start: flex-start,
-      end: flex-end,
+      start: flelivewire:components.start,
+      end: flelivewire:components.end,
       center: center,
       baseline: baseline,
       stretch: stretch,
@@ -286,8 +286,8 @@ $utilities: (
     responsive: true,
     property: align-content,
     values: (
-      start: flex-start,
-      end: flex-end,
+      start: flelivewire:components.start,
+      end: flelivewire:components.end,
       center: center,
       between: space-between,
       around: space-around,
@@ -299,8 +299,8 @@ $utilities: (
     property: align-self,
     values: (
       auto: auto,
-      start: flex-start,
-      end: flex-end,
+      start: flelivewire:components.start,
+      end: flelivewire:components.end,
       center: center,
       baseline: baseline,
       stretch: stretch,
@@ -729,36 +729,36 @@ $utilities: (
     )
   ),
   // Max Height Values
- "max-height-px": (
-   property: max-height,
-   class: max-height,
+ "malivewire:components.height-px": (
+   property: malivewire:components.height,
+   class: malivewire:components.height,
    values: (
-    100: $max-height-100,
-    150: $max-height-150,
-    160: $max-height-160,
-    200: $max-height-200,
-    250: $max-height-250,
-    300: $max-height-300,
-    400: $max-height-400,
-    500: $max-height-500,
-    600: $max-height-600
+    100: $malivewire:components.height-100,
+    150: $malivewire:components.height-150,
+    160: $malivewire:components.height-160,
+    200: $malivewire:components.height-200,
+    250: $malivewire:components.height-250,
+    300: $malivewire:components.height-300,
+    400: $malivewire:components.height-400,
+    500: $malivewire:components.height-500,
+    600: $malivewire:components.height-600
    )
  ),
   // Max Height Values vh
- "max-height-vh": (
-   property: max-height,
-   class: max-height-vh,
+ "malivewire:components.height-vh": (
+   property: malivewire:components.height,
+   class: malivewire:components.height-vh,
    values: (
-    10: $max-height-vh-10,
-    20: $max-height-vh-20,
-    30: $max-height-vh-30,
-    40: $max-height-vh-40,
-    50: $max-height-vh-50,
-    60: $max-height-vh-60,
-    70: $max-height-vh-70,
-    80: $max-height-vh-80,
-    90: $max-height-vh-90,
-    100: $max-height-vh-100,
+    10: $malivewire:components.height-vh-10,
+    20: $malivewire:components.height-vh-20,
+    30: $malivewire:components.height-vh-30,
+    40: $malivewire:components.height-vh-40,
+    50: $malivewire:components.height-vh-50,
+    60: $malivewire:components.height-vh-60,
+    70: $malivewire:components.height-vh-70,
+    80: $malivewire:components.height-vh-80,
+    90: $malivewire:components.height-vh-90,
+    100: $malivewire:components.height-vh-100,
    )
  ),
  // Min Height Values
@@ -792,15 +792,15 @@ $utilities: (
     )
   ),
   // Max Width Values
-   "max-width-px": (
-     property: max-width,
-     class: max-width,
+   "malivewire:components.width-px": (
+     property: malivewire:components.width,
+     class: malivewire:components.width,
      values: (
-      100: $max-width-100,
-      200: $max-width-200,
-      300: $max-width-300,
-      400: $max-width-400,
-      500: $max-width-500
+      100: $malivewire:components.width-100,
+      200: $malivewire:components.width-200,
+      300: $malivewire:components.width-300,
+      400: $malivewire:components.width-400,
+      500: $malivewire:components.width-500
      )
    ),
 );

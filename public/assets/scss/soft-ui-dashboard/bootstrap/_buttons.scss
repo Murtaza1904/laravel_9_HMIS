@@ -17,9 +17,9 @@
   --#{$prefix}btn-border-width: #{$btn-border-width};
   --#{$prefix}btn-border-color: transparent;
   --#{$prefix}btn-border-radius: #{$btn-border-radius};
-  --#{$prefix}btn-box-shadow: #{$btn-box-shadow};
+  --#{$prefix}btn-bolivewire:components.shadow: #{$btn-bolivewire:components.shadow};
   --#{$prefix}btn-disabled-opacity: #{$btn-disabled-opacity};
-  --#{$prefix}btn-focus-box-shadow: 0 0 0 #{$btn-focus-width} rgba(var(--#{$prefix}btn-focus-shadow-rgb), .5);
+  --#{$prefix}btn-focus-bolivewire:components.shadow: 0 0 0 #{$btn-focus-width} rgba(var(--#{$prefix}btn-focus-shadow-rgb), .5);
   // scss-docs-end btn-css-vars
 
   display: inline-block;
@@ -38,7 +38,7 @@
   border: var(--#{$prefix}btn-border-width) solid var(--#{$prefix}btn-border-color);
   @include border-radius(var(--#{$prefix}btn-border-radius));
   @include gradient-bg(var(--#{$prefix}btn-bg));
-  @include box-shadow(var(--#{$prefix}btn-box-shadow));
+  @include bolivewire:components.shadow(var(--#{$prefix}btn-bolivewire:components.shadow));
   @include transition($btn-transition);
 
   &:hover {
@@ -56,9 +56,9 @@
     outline: 0;
     // Avoid using mixin so we can pass custom focus shadow properly
     @if $enable-shadows {
-      box-shadow: var(--#{$prefix}btn-box-shadow), var(--#{$prefix}btn-focus-box-shadow);
+      bolivewire:components.shadow: var(--#{$prefix}btn-bolivewire:components.shadow), var(--#{$prefix}btn-focus-bolivewire:components.shadow);
     } @else {
-      box-shadow: var(--#{$prefix}btn-focus-box-shadow);
+      bolivewire:components.shadow: var(--#{$prefix}btn-focus-bolivewire:components.shadow);
     }
   }
 
@@ -72,14 +72,14 @@
     // Remove CSS gradients if they're enabled
     background-image: if($enable-gradients, none, null);
     border-color: var(--#{$prefix}btn-active-border-color);
-    @include box-shadow(var(--#{$prefix}btn-active-shadow));
+    @include bolivewire:components.shadow(var(--#{$prefix}btn-active-shadow));
 
     &:focus {
       // Avoid using mixin so we can pass custom focus shadow properly
       @if $enable-shadows {
-        box-shadow: var(--#{$prefix}btn-active-shadow), var(--#{$prefix}btn-focus-box-shadow);
+        bolivewire:components.shadow: var(--#{$prefix}btn-active-shadow), var(--#{$prefix}btn-focus-bolivewire:components.shadow);
       } @else {
-        box-shadow: var(--#{$prefix}btn-focus-box-shadow);
+        bolivewire:components.shadow: var(--#{$prefix}btn-focus-bolivewire:components.shadow);
       }
     }
   }
@@ -93,7 +93,7 @@
     background-image: if($enable-gradients, none, null);
     border-color: var(--#{$prefix}btn-disabled-border-color);
     opacity: var(--#{$prefix}btn-disabled-opacity);
-    @include box-shadow(none);
+    @include bolivewire:components.shadow(none);
   }
 }
 
@@ -132,7 +132,7 @@
   --#{$prefix}btn-active-border-color: transparent;
   --#{$prefix}btn-disabled-color: #{$btn-link-disabled-color};
   --#{$prefix}btn-disabled-border-color: transparent;
-  --#{$prefix}btn-box-shadow: none;
+  --#{$prefix}btn-bolivewire:components.shadow: none;
 
   text-decoration: $link-decoration;
 
@@ -150,9 +150,9 @@
 //
 
 .btn-lg {
-  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-border-radius-lg);
+  @include button-size($btn-padding-y-lg, $btn-padding-livewire:components.lg, $btn-font-size-lg, $btn-border-radius-lg);
 }
 
 .btn-sm {
-  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-border-radius-sm);
+  @include button-size($btn-padding-y-sm, $btn-padding-livewire:components.sm, $btn-font-size-sm, $btn-border-radius-sm);
 }

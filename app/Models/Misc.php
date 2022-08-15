@@ -10,11 +10,9 @@ class Misc extends Model
     use HasFactory;
 
     protected $fillable = [
+        'patient_id',
         'date_deceased',
         'reason_deceased',
     ];
 
-    protected $hidden = [
-        'patient_id',
-    ];
 }

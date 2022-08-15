@@ -15,7 +15,7 @@
   // scss-docs-end nav-css-vars
 
   display: flex;
-  flex-wrap: wrap;
+  flelivewire:components.wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -144,8 +144,8 @@
 .nav-justified {
   > .nav-link,
   .nav-item {
-    flex-basis: 0;
-    flex-grow: 1;
+    flelivewire:components.basis: 0;
+    flelivewire:components.grow: 1;
     text-align: center;
   }
 }

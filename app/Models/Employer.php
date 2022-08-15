@@ -10,6 +10,7 @@ class Employer extends Model
     use HasFactory;
 
     protected $fillable = [
+        'patient_id',
         'industry',
         'occupation',
         'employer_name',
@@ -18,10 +19,6 @@ class Employer extends Model
         'state',
         'postal_code',
         'country',
-    ];
-
-    protected $hidden = [
-        'patient_id',
     ];
 
 }

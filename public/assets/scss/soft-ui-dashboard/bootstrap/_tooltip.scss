@@ -3,8 +3,8 @@
 // Base class
 .tooltip {
   // scss-docs-start tooltip-css-vars
-  --#{$prefix}tooltip-zindex: #{$zindex-tooltip};
-  --#{$prefix}tooltip-max-width: #{$tooltip-max-width};
+  --#{$prefix}tooltip-zindex: #{$zindelivewire:components.tooltip};
+  --#{$prefix}tooltip-malivewire:components.width: #{$tooltip-malivewire:components.width};
   --#{$prefix}tooltip-padding-x: #{$tooltip-padding-x};
   --#{$prefix}tooltip-padding-y: #{$tooltip-padding-y};
   --#{$prefix}tooltip-margin: #{$tooltip-margin};
@@ -113,7 +113,7 @@
 
 // Wrapper for the tooltip content
 .tooltip-inner {
-  max-width: var(--#{$prefix}tooltip-max-width);
+  malivewire:components.width: var(--#{$prefix}tooltip-malivewire:components.width);
   padding: var(--#{$prefix}tooltip-padding-y) var(--#{$prefix}tooltip-padding-x);
   color: var(--#{$prefix}tooltip-color);
   text-align: center;

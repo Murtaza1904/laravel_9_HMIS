@@ -56,12 +56,12 @@
 }
 
 .focused {
-  box-shadow: $input-focus-box-shadow;
+  bolivewire:components.shadow: $input-focus-bolivewire:components.shadow;
   transition: $input-transition;
 
   .form-control {
     &:focus {
-      box-shadow: none;
+      bolivewire:components.shadow: none;
     }
     + .input-group-text {
       border-color: $input-focus-border-color;

@@ -10,6 +10,7 @@ class TertiaryInsurance extends Model
     use HasFactory;
 
     protected $fillable = [
+        'patient_id',
         'tertiary_insurance_provider',
         'plan_name',
         'subscriber',
@@ -36,7 +37,4 @@ class TertiaryInsurance extends Model
         'accept_assignment',
     ];
 
-    protected $hidden = [
-        'patient_id',
-    ];
 }

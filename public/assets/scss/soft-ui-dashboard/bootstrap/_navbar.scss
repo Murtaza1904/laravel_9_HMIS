@@ -29,7 +29,7 @@
 
   position: relative;
   display: flex;
-  flex-wrap: wrap; // allow us to do the line break for collapsing content
+  flelivewire:components.wrap: wrap; // allow us to do the line break for collapsing content
   align-items: center;
   justify-content: space-between; // space out brand from logo
   padding: var(--#{$prefix}navbar-padding-y) var(--#{$prefix}navbar-padding-x);
@@ -37,22 +37,22 @@
 
   // Because flex properties aren't inherited, we need to redeclare these first
   // few properties so that content nested within behave properly.
-  // The `flex-wrap` property is inherited to simplify the expanded navbars
-  %container-flex-properties {
+  // The `flelivewire:components.wrap` property is inherited to simplify the expanded navbars
+  %container-flelivewire:components.properties {
     display: flex;
-    flex-wrap: inherit;
+    flelivewire:components.wrap: inherit;
     align-items: center;
     justify-content: space-between;
   }
 
   > .container,
   > .container-fluid {
-    @extend %container-flex-properties;
+    @extend %container-flelivewire:components.properties;
   }
 
-  @each $breakpoint, $container-max-width in $container-max-widths {
-    > .container#{breakpoint-infix($breakpoint, $container-max-widths)} {
-      @extend %container-flex-properties;
+  @each $breakpoint, $container-malivewire:components.width in $container-malivewire:components.widths {
+    > .container#{breakpoint-infix($breakpoint, $container-malivewire:components.widths)} {
+      @extend %container-flelivewire:components.properties;
     }
   }
 }
@@ -93,7 +93,7 @@
   // scss-docs-end navbar-nav-css-vars
 
   display: flex;
-  flex-direction: column; // cannot use `inherit` to get the `.navbar`s value
+  flelivewire:components.direction: column; // cannot use `inherit` to get the `.navbar`s value
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -132,11 +132,11 @@
 // Powered by the collapse Bootstrap JavaScript plugin.
 
 // When collapsed, prevent the toggleable navbar contents from appearing in
-// the default flexbox row orientation. Requires the use of `flex-wrap: wrap`
+// the default flexbox row orientation. Requires the use of `flelivewire:components.wrap: wrap`
 // on the `.navbar` parent.
 .navbar-collapse {
-  flex-basis: 100%;
-  flex-grow: 1;
+  flelivewire:components.basis: 100%;
+  flelivewire:components.grow: 1;
   // For always expanded or extra full navbars, ensure content aligns itself
   // properly vertically. Can be easily overridden with flex utilities.
   align-items: center;
@@ -160,7 +160,7 @@
   &:focus {
     text-decoration: none;
     outline: 0;
-    box-shadow: 0 0 0 var(--#{$prefix}navbar-toggler-focus-width);
+    bolivewire:components.shadow: 0 0 0 var(--#{$prefix}navbar-toggler-focus-width);
   }
 }
 
@@ -178,7 +178,7 @@
 }
 
 .navbar-nav-scroll {
-  max-height: var(--#{$prefix}scroll-height, 75vh);
+  malivewire:components.height: var(--#{$prefix}scroll-height, 75vh);
   overflow-y: auto;
 }
 
@@ -193,11 +193,11 @@
     // stylelint-disable-next-line scss/selector-no-union-class-name
     &#{$infix} {
       @include media-breakpoint-up($next) {
-        flex-wrap: nowrap;
-        justify-content: flex-start;
+        flelivewire:components.wrap: nowrap;
+        justify-content: flelivewire:components.start;
 
         .navbar-nav {
-          flex-direction: row;
+          flelivewire:components.direction: row;
 
           .dropdown-menu {
             position: absolute;
@@ -215,7 +215,7 @@
 
         .navbar-collapse {
           display: flex !important; // stylelint-disable-line declaration-no-important
-          flex-basis: auto;
+          flelivewire:components.basis: auto;
         }
 
         .navbar-toggler {
@@ -226,14 +226,14 @@
           // stylelint-disable declaration-no-important
           position: static;
           z-index: auto;
-          flex-grow: 1;
+          flelivewire:components.grow: 1;
           width: auto !important;
           height: auto !important;
           visibility: visible !important;
           background-color: transparent !important;
           border: 0 !important;
           transform: none !important;
-          @include box-shadow(none);
+          @include bolivewire:components.shadow(none);
           @include transition(none);
           // stylelint-enable declaration-no-important
 
@@ -243,7 +243,7 @@
 
           .offcanvas-body {
             display: flex;
-            flex-grow: 0;
+            flelivewire:components.grow: 0;
             padding: 0;
             overflow-y: visible;
           }

@@ -1,4 +1,4 @@
-@mixin box-shadow($shadow...) {
+@mixin bolivewire:components.shadow($shadow...) {
   @if $enable-shadows {
     $result: ();
 
@@ -12,7 +12,7 @@
     }
 
     @if (length($result) > 0) {
-      box-shadow: $result;
+      bolivewire:components.shadow: $result;
     }
   }
 }

@@ -11,6 +11,7 @@
     <link href="{{ asset('assets/css/nucleo-icons.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/css/nucleo-svg.css') }}" rel="stylesheet" />
     <link id="pagestyle" href="{{ asset('assets/css/soft-ui-dashboard.css?v=1.0.6') }}" rel="stylesheet" />
+    <script defer src="{{ url('https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js') }}"></script>
     @livewireStyles
 </head>
 
@@ -119,7 +120,7 @@
                             class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                             <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <title>box-3d-50</title>
+                                <title>bolivewire:components.3d-50</title>
                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g transform="translate(-2319.000000, -291.000000)" fill="#FFFFFF"
                                         fill-rule="nonzero">
@@ -230,7 +231,7 @@
                                 </g>
                             </svg>
                         </div>
-                        <span class="nav-link-text ms-1">Sign In</span>
+                        <span class="nav-link-text ms-1">Sign in</span>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -270,12 +271,12 @@
         </div>
 
     </aside>
-    <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
-        <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur"
+    <main class="main-content position-relative malivewire:components.height-vh-100 h-100 border-radius-lg ">
+        <nav class="navbar navbar-main navbar-expand-lg plivewire:components.0 mlivewire:components.4 shadow-none border-radius-xl" id="navbarBlur"
             navbar-scroll="true">
-            <div class="container-fluid py-1 px-3">
+            <div class="container-fluid py-1 plivewire:components.3">
                 <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+                    <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 plivewire:components.0 me-sm-6 me-5">
                         <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark"
                                 href="javascript:;">Pages</a></li>
                         <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Tables</li>
@@ -287,10 +288,20 @@
                         <ul class="navbar-nav  justify-content-end">
 
                             <li class="nav-item d-flex align-items-center">
-                                <a href="javascript:;" class="nav-link text-body font-weight-bold px-0">
+                                {{-- <a href="javascript:;" class="nav-link text-body font-weight-bold plivewire:components.0">
                                     <i class="fa fa-user me-sm-1"></i>
-                                    <span class="d-sm-inline d-none">Sign In</span>
-                                </a>
+                                    <span class="d-sm-inline d-none">{{ auth()->user()->name }}</span>
+                                </a> --}}
+                                <div class="btn-group dropstart">
+                                    <a class="nav-link text-body font-weight-bold plivewire:components.0" href="#" role="button"
+                                        id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        {{ auth()->user()->name }}
+                                    </a>
+
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="{{ route('logout') }}">logout</a></li>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
                                 <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
@@ -311,7 +322,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="card mb-4">
-                        {{ $slot }}
+                        @livewire('patients')
                     </div>
                 </div>
             </div>
@@ -347,6 +358,7 @@
     <script async defer src="{{ url('https://buttons.github.io/buttons.js') }}"></script>
     <script src="{{ asset('assets/js/soft-ui-dashboard.min.js?v=1.0.6') }}"></script>
     <script src="{{ url('https://kit.fontawesome.com/42d5adcbca.js') }}" crossorigin="anonymous"></script>
+    <script src="{{ url('https://unpkg.com/sweetalert/dist/sweetalert.min.js') }}"></script>
     @livewireScripts
 </body>
 

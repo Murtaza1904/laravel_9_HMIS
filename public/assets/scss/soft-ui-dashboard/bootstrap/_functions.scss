@@ -152,22 +152,22 @@ $_luminance-list: .0008 .001 .0011 .0013 .0015 .0017 .002 .0022 .0025 .0027 .003
 
 @function color-contrast($background, $color-contrast-dark: $color-contrast-dark, $color-contrast-light: $color-contrast-light, $min-contrast-ratio: $min-contrast-ratio) {
   $foregrounds: $color-contrast-light, $color-contrast-dark, $white, $black;
-  $max-ratio: 0;
-  $max-ratio-color: null;
+  $malivewire:components.ratio: 0;
+  $malivewire:components.ratio-color: null;
 
   @each $color in $foregrounds {
     $contrast-ratio: contrast-ratio($background, $color);
     @if $contrast-ratio > $min-contrast-ratio {
       @return $color;
-    } @else if $contrast-ratio > $max-ratio {
-      $max-ratio: $contrast-ratio;
-      $max-ratio-color: $color;
+    } @else if $contrast-ratio > $malivewire:components.ratio {
+      $malivewire:components.ratio: $contrast-ratio;
+      $malivewire:components.ratio-color: $color;
     }
   }
 
   @warn "Found no color leading to #{$min-contrast-ratio}:1 contrast ratio against #{$background}...";
 
-  @return $max-ratio-color;
+  @return $malivewire:components.ratio-color;
 }
 
 @function contrast-ratio($background, $foreground: $color-contrast-light) {

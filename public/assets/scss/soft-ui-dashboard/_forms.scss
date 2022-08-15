@@ -11,7 +11,7 @@
   }
 
 	.form-control {
-		box-shadow: none;
+		bolivewire:components.shadow: none;
     background-image: none;
 
 		&:not(:first-child) {
@@ -36,7 +36,7 @@
 
 
   &.focused {
-    box-shadow: $input-focus-box-shadow;
+    bolivewire:components.shadow: $input-focus-bolivewire:components.shadow;
   }
 
   &.focused .input-group-text {

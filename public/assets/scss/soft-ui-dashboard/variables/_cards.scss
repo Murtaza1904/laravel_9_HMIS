@@ -1,11 +1,11 @@
-$card-box-shadow:                   0 20px 27px 0 rgba(0,0,0,0.05)  !default;
+$card-bolivewire:components.shadow:                   0 20px 27px 0 rgba(0,0,0,0.05)  !default;
 $card-background-blur:              rgba(255, 255, 255, 0.8) !default;
 
 $card-header-padding:               1.5rem !default;
 
 $card-body-padding:                 $card-header-padding !default;
 $card-plain-bg-color:               transparent !default;
-$card-plain-box-shadow:             none !default;
+$card-plain-bolivewire:components.shadow:             none !default;
 
 $card-footer-padding:               $card-body-padding !default;
 
@@ -33,7 +33,7 @@ $card-bg-align-items:               center !default;
 $card-bg-body-position:             relative !default;
 $card-bg-body-z-index:              2 !default;
 $card-bg-content-min-height:        330px !default;
-$card-bg-content-max-width:         450px !default;
+$card-bg-content-malivewire:components.width:         450px !default;
 $card-bg-content-pt:                60px !default;
 $card-bg-content-pb:                $card-bg-content-pt !default;
 $card-bg-body-left-width:           90% !default;

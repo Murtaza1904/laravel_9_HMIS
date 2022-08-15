@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('emergency_phone')->nullable();
             $table->string('home_phone')->nullable();
             $table->string('work_phone')->nullable();
+            $table->string('mobile_phone')->nullable();
             $table->string('contact_email')->nullable();
             $table->string('trusted_email')->nullable();
             $table->timestamps();

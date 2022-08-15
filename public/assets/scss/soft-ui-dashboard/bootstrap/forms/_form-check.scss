@@ -56,7 +56,7 @@
   &:focus {
     border-color: $form-check-input-focus-border;
     outline: 0;
-    box-shadow: $form-check-input-focus-box-shadow;
+    bolivewire:components.shadow: $form-check-input-focus-bolivewire:components.shadow;
   }
 
   &:checked {

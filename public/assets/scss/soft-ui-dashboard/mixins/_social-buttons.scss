@@ -11,14 +11,14 @@
   &:active,
   &:focus,
   &:active:focus {
-    box-shadow: none;
+    bolivewire:components.shadow: none;
   }
 
   &.btn-simple {
     color: $state-color;
     background-color: transparent;
     background-image: none !important;
-    box-shadow: none;
+    bolivewire:components.shadow: none;
     border: none;
 
     &:hover,
@@ -28,7 +28,7 @@
     &:hover:focus:active {
       color: $state-color;
       background: transparent !important;
-      box-shadow: none !important;
+      bolivewire:components.shadow: none !important;
     }
   }
 

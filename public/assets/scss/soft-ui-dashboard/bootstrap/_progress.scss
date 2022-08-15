@@ -14,7 +14,7 @@
   @include rfs($progress-font-size, --#{$prefix}progress-font-size);
   --#{$prefix}progress-bg: #{$progress-bg}; // stylelint-disable-line custom-property-empty-line-before
   --#{$prefix}progress-border-radius: #{$progress-border-radius};
-  --#{$prefix}progress-box-shadow: #{$progress-box-shadow};
+  --#{$prefix}progress-bolivewire:components.shadow: #{$progress-bolivewire:components.shadow};
   --#{$prefix}progress-bar-color: #{$progress-bar-color};
   --#{$prefix}progress-bar-bg: #{$progress-bar-bg};
   --#{$prefix}progress-bar-transition: #{$progress-bar-transition};
@@ -26,12 +26,12 @@
   @include font-size(var(--#{$prefix}progress-font-size));
   background-color: var(--#{$prefix}progress-bg);
   @include border-radius(var(--#{$prefix}progress-border-radius));
-  @include box-shadow(var(--#{$prefix}progress-box-shadow));
+  @include bolivewire:components.shadow(var(--#{$prefix}progress-bolivewire:components.shadow));
 }
 
 .progress-bar {
   display: flex;
-  flex-direction: column;
+  flelivewire:components.direction: column;
   justify-content: center;
   overflow: hidden;
   color: var(--#{$prefix}progress-bar-color);

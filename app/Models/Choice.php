@@ -10,9 +10,11 @@ class Choice extends Model
     use HasFactory;
 
     protected $fillable = [
+        'patient_id',
         'provider',
         'referring_provider',
-        'pharmacy','hipaa_notice_received',
+        'pharmacy',
+        'hipaa_notice_received',
         'allow_voice_message',
         'leave_message_with',
         'allow_mail_message',
@@ -33,7 +35,4 @@ class Choice extends Model
         'care_team_facility',
     ];
 
-    protected $hidden = [
-        'patient_id',
-    ];
 }

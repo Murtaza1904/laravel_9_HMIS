@@ -4,7 +4,7 @@ $move-overflow:                 hidden !default;
 $move-transform:                perspective(999px) rotateX(0deg) translate3d(0,0,0) !default;
 $move-transform-origin:         50% 0 !default;
 $move-backface-visibility:      hidden !default;
-$move-will-change:              transform,box-shadow !default;
+$move-will-change:              transform,bolivewire:components.shadow !default;
 $move-hover-transform:          perspective(999px) rotateX(7deg) translate3d(0px,-4px,5px) !default;
 
 // Sections Height Utilities
@@ -72,11 +72,11 @@ $width-95:                    95% !default;
 $width-100:                   100% !default;
 
 // extra max width values variables - CT
-$max-width-100:                     100px !default;
-$max-width-200:                     200px !default;
-$max-width-300:                     300px !default;
-$max-width-400:                     400px !default;
-$max-width-500:                     500px !default;
+$malivewire:components.width-100:                     100px !default;
+$malivewire:components.width-200:                     200px !default;
+$malivewire:components.width-300:                     300px !default;
+$malivewire:components.width-400:                     400px !default;
+$malivewire:components.width-500:                     500px !default;
 
 // extra height values variables - CT
 $height-100:                        100px !default;
@@ -100,27 +100,27 @@ $min-height-500:                    500px !default;
 $min-height-600:                    600px !default;
 
 // extra min height values variables - CT
-$max-height-100:                    100px !default;
-$max-height-150:                    150px !default;
-$max-height-160:                    160px !default;
-$max-height-200:                    200px !default;
-$max-height-250:                    250px !default;
-$max-height-300:                    300px !default;
-$max-height-400:                    400px !default;
-$max-height-500:                    500px !default;
-$max-height-600:                    600px !default;
+$malivewire:components.height-100:                    100px !default;
+$malivewire:components.height-150:                    150px !default;
+$malivewire:components.height-160:                    160px !default;
+$malivewire:components.height-200:                    200px !default;
+$malivewire:components.height-250:                    250px !default;
+$malivewire:components.height-300:                    300px !default;
+$malivewire:components.height-400:                    400px !default;
+$malivewire:components.height-500:                    500px !default;
+$malivewire:components.height-600:                    600px !default;
 
 // extra min height vh values variables - CT
-$max-height-vh-10:                    10vh !default;
-$max-height-vh-20:                    20vh !default;
-$max-height-vh-30:                    30vh !default;
-$max-height-vh-40:                    40vh !default;
-$max-height-vh-50:                    50vh !default;
-$max-height-vh-60:                    60vh !default;
-$max-height-vh-70:                    70vh !default;
-$max-height-vh-80:                    80vh !default;
-$max-height-vh-90:                    90vh !default;
-$max-height-vh-100:                   100vh !default;
+$malivewire:components.height-vh-10:                    10vh !default;
+$malivewire:components.height-vh-20:                    20vh !default;
+$malivewire:components.height-vh-30:                    30vh !default;
+$malivewire:components.height-vh-40:                    40vh !default;
+$malivewire:components.height-vh-50:                    50vh !default;
+$malivewire:components.height-vh-60:                    60vh !default;
+$malivewire:components.height-vh-70:                    70vh !default;
+$malivewire:components.height-vh-80:                    80vh !default;
+$malivewire:components.height-vh-90:                    90vh !default;
+$malivewire:components.height-vh-100:                   100vh !default;
 
 // Extra Padding values Map
 $paddings: (
@@ -180,11 +180,11 @@ $width: (
 
 // blur effect variables
 $blur-border-radius-rounded:    40px !default;
-$blur-box-shadow:               inset 0px 0px 2px #fefefed1 !default;
+$blur-bolivewire:components.shadow:               inset 0px 0px 2px #fefefed1 !default;
 $blur-backdrop-filter:          saturate(200%) blur(30px) !default;
 $blur-backdrop-filter-less:     saturate(20%) blur(30px) !default;
 
-$shadow-blur-box-shadow:        inset 0 0px 1px 1px rgba(254, 254, 254, .9), 0 20px 27px 0 rgba(0, 0, 0, .05) !default;
+$shadow-blur-bolivewire:components.shadow:        inset 0 0px 1px 1px rgba(254, 254, 254, .9), 0 20px 27px 0 rgba(0, 0, 0, .05) !default;
 
 // sidebar variables
 

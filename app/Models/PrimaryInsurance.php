@@ -10,6 +10,7 @@ class PrimaryInsurance extends Model
     use HasFactory;
 
     protected $fillable = [
+        'patient_id',
         'primary_insurance_provider',
         'plan_name',
         'subscriber',
@@ -34,7 +35,4 @@ class PrimaryInsurance extends Model
         'accept_assignment',
     ];
 
-    protected $hidden = [
-        'patient_id',
-    ];
 }

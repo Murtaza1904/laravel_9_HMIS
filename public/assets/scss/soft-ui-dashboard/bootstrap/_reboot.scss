@@ -11,12 +11,12 @@
 
 // Document
 //
-// Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`.
+// Change from `bolivewire:components.sizing: content-box` so that `width` is not affected by `padding` or `border`.
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  bolivewire:components.sizing: border-box;
 }
 
 

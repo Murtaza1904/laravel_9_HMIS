@@ -10,6 +10,7 @@ class Stats extends Model
     use HasFactory;
 
     protected $fillable = [
+        'patient_id',
         'language',
         'ethnicity',
         'race',
@@ -24,7 +25,4 @@ class Stats extends Model
         'religion',
     ];
 
-    protected $hidden = [
-        'patient_id',
-    ];
 }

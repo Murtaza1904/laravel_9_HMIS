@@ -11,20 +11,22 @@ class Patient extends Model
     use HasFactory;
 
     protected $fillable = [
+        'patient_id',
         'firstname',
         'lastname',
         'date_of_birth',
         'gender',
         'marital_status',
         'national_id',
+        'social_security_number',
         'external_id',
         'user_defined',
         'billing_note',
     ];
 
-    public function contacts(): HasOne
+    public function contacts()
     {
-        return $this->hasOne(Contact::class,'patient_id');
+        return $this->belongsTo(Contact::class,'patient_id');
     }
 
     public function choices(): HasOne

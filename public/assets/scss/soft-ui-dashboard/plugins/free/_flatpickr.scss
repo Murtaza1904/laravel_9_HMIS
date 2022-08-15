@@ -14,17 +14,17 @@
   border-radius: 5px;
   position: absolute;
   width: 307.875px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-bolivewire:components.sizing: border-box;
+          bolivewire:components.sizing: border-box;
   -ms-touch-action: manipulation;
       touch-action: manipulation;
   background: #fff;
-  -webkit-box-shadow: $box-shadow-lg;
+  -webkit-bolivewire:components.shadow: $bolivewire:components.shadow-lg;
 }
 .flatpickr-calendar.open,
 .flatpickr-calendar.inline {
   opacity: 1;
-  max-height: 640px;
+  malivewire:components.height: 640px;
   visibility: visible;
 }
 .flatpickr-calendar.open {
@@ -49,12 +49,12 @@
   display: block;
 }
 .flatpickr-calendar.multiMonth .flatpickr-days .dayContainer:nth-child(n+1) .flatpickr-day.inRange:nth-child(7n+7) {
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  -webkit-bolivewire:components.shadow: none !important;
+          bolivewire:components.shadow: none !important;
 }
 .flatpickr-calendar.multiMonth .flatpickr-days .dayContainer:nth-child(n+2) .flatpickr-day.inRange:nth-child(7n+1) {
-  -webkit-box-shadow: -2px 0 0 #e6e6e6, 5px 0 0 #e6e6e6;
-          box-shadow: -2px 0 0 #e6e6e6, 5px 0 0 #e6e6e6;
+  -webkit-bolivewire:components.shadow: -2px 0 0 #e6e6e6, 5px 0 0 #e6e6e6;
+          bolivewire:components.shadow: -2px 0 0 #e6e6e6, 5px 0 0 #e6e6e6;
 }
 .flatpickr-calendar .hasWeeks .dayContainer,
 .flatpickr-calendar .hasTime .dayContainer {
@@ -149,7 +149,7 @@
       -ms-user-select: none;
           user-select: none;
   overflow: hidden;
-  -webkit-box-flex: 1;
+  -webkit-bolivewire:components.flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -254,8 +254,8 @@
   opacity: 0;
   cursor: pointer;
   border: 1px solid rgba(57,57,57,0.15);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-bolivewire:components.sizing: border-box;
+          bolivewire:components.sizing: border-box;
 }
 .numInputWrapper span:hover {
   background: rgba(0,0,0,0.1);
@@ -340,8 +340,8 @@
 }
 .flatpickr-current-month input.cur-year {
   background: transparent;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-bolivewire:components.sizing: border-box;
+          bolivewire:components.sizing: border-box;
   color: inherit;
   cursor: text;
   padding: 0 0 0 0.5ch;
@@ -374,7 +374,7 @@
   background: transparent;
   border: none;
   border-radius: 0;
-  box-sizing: border-box;
+  bolivewire:components.sizing: border-box;
   color: inherit;
   cursor: pointer;
   font-size: inherit;
@@ -387,7 +387,7 @@
   padding: 0 0 0 0.5ch;
   position: relative;
   vertical-align: initial;
-  -webkit-box-sizing: border-box;
+  -webkit-bolivewire:components.sizing: border-box;
   -webkit-appearance: menulist;
   -moz-appearance: menulist;
   width: auto;
@@ -413,9 +413,9 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
+  -webkit-bolivewire:components.align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
+      -ms-flelivewire:components.align: center;
           align-items: center;
   height: 28px;
 }
@@ -424,7 +424,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
+  -webkit-bolivewire:components.flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -438,7 +438,7 @@ span.flatpickr-weekday {
   margin: 0;
   text-align: center;
   display: block;
-  -webkit-box-flex: 1;
+  -webkit-bolivewire:components.flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -455,10 +455,10 @@ span.flatpickr-weekday {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-bolivewire:components.align: start;
+  -webkit-align-items: flelivewire:components.start;
+      -ms-flelivewire:components.align: start;
+          align-items: flelivewire:components.start;
   width: 307.875px;
 }
 .flatpickr-days:focus {
@@ -470,18 +470,18 @@ span.flatpickr-weekday {
   text-align: left;
   width: 307.875px;
   min-width: 307.875px;
-  max-width: 307.875px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  malivewire:components.width: 307.875px;
+  -webkit-bolivewire:components.sizing: border-box;
+          bolivewire:components.sizing: border-box;
   display: inline-block;
   display: -ms-flexbox;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  -ms-flex-pack: justify;
+  -webkit-flelivewire:components.wrap: wrap;
+          flelivewire:components.wrap: wrap;
+  -ms-flelivewire:components.wrap: wrap;
+  -ms-flelivewire:components.pack: justify;
   -webkit-justify-content: space-around;
           justify-content: space-around;
   -webkit-transform: translate3d(0px, 0px, 0px);
@@ -489,31 +489,31 @@ span.flatpickr-weekday {
   opacity: 1;
 }
 .dayContainer + .dayContainer {
-  -webkit-box-shadow: -1px 0 0 #e6e6e6;
-          box-shadow: -1px 0 0 #e6e6e6;
+  -webkit-bolivewire:components.shadow: -1px 0 0 #e6e6e6;
+          bolivewire:components.shadow: -1px 0 0 #e6e6e6;
 }
 .flatpickr-day {
   background: none;
   border: 1px solid transparent;
   border-radius: 150px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-bolivewire:components.sizing: border-box;
+          bolivewire:components.sizing: border-box;
   color: #393939;
   cursor: pointer;
   font-weight: 400;
   width: 14.2857143%;
-  -webkit-flex-basis: 14.2857143%;
-      -ms-flex-preferred-size: 14.2857143%;
-          flex-basis: 14.2857143%;
-  max-width: 39px;
+  -webkit-flelivewire:components.basis: 14.2857143%;
+      -ms-flelivewire:components.preferred-size: 14.2857143%;
+          flelivewire:components.basis: 14.2857143%;
+  malivewire:components.width: 39px;
   height: 39px;
   line-height: 39px;
   margin: 0;
   display: inline-block;
   position: relative;
-  -webkit-box-pack: center;
+  -webkit-bolivewire:components.pack: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
+      -ms-flelivewire:components.pack: center;
           justify-content: center;
   text-align: center;
 }
@@ -562,8 +562,8 @@ span.flatpickr-weekday {
 .flatpickr-day.startRange.nextMonthDay,
 .flatpickr-day.endRange.nextMonthDay {
   background: #569ff7;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  -webkit-bolivewire:components.shadow: none;
+          bolivewire:components.shadow: none;
   color: #fff;
   border-color: #569ff7;
 }
@@ -580,8 +580,8 @@ span.flatpickr-weekday {
 .flatpickr-day.selected.startRange + .endRange:not(:nth-child(7n+1)),
 .flatpickr-day.startRange.startRange + .endRange:not(:nth-child(7n+1)),
 .flatpickr-day.endRange.startRange + .endRange:not(:nth-child(7n+1)) {
-  -webkit-box-shadow: -10px 0 0 #569ff7;
-          box-shadow: -10px 0 0 #569ff7;
+  -webkit-bolivewire:components.shadow: -10px 0 0 #569ff7;
+          bolivewire:components.shadow: -10px 0 0 #569ff7;
 }
 .flatpickr-day.selected.startRange.endRange,
 .flatpickr-day.startRange.startRange.endRange,
@@ -590,8 +590,8 @@ span.flatpickr-weekday {
 }
 .flatpickr-day.inRange {
   border-radius: 0;
-  -webkit-box-shadow: -5px 0 0 #e6e6e6, 5px 0 0 #e6e6e6;
-          box-shadow: -5px 0 0 #e6e6e6, 5px 0 0 #e6e6e6;
+  -webkit-bolivewire:components.shadow: -5px 0 0 #e6e6e6, 5px 0 0 #e6e6e6;
+          bolivewire:components.shadow: -5px 0 0 #e6e6e6, 5px 0 0 #e6e6e6;
 }
 .flatpickr-day.flatpickr-disabled,
 .flatpickr-day.flatpickr-disabled:hover,
@@ -612,8 +612,8 @@ span.flatpickr-weekday {
 }
 .flatpickr-day.week.selected {
   border-radius: 0;
-  -webkit-box-shadow: -5px 0 0 #569ff7, 5px 0 0 #569ff7;
-          box-shadow: -5px 0 0 #569ff7, 5px 0 0 #569ff7;
+  -webkit-bolivewire:components.shadow: -5px 0 0 #569ff7, 5px 0 0 #569ff7;
+          bolivewire:components.shadow: -5px 0 0 #569ff7, 5px 0 0 #569ff7;
 }
 .flatpickr-day.hidden {
   visibility: hidden;
@@ -626,8 +626,8 @@ span.flatpickr-weekday {
 }
 .flatpickr-weekwrapper .flatpickr-weeks {
   padding: 0 12px;
-  -webkit-box-shadow: 1px 0 0 #e6e6e6;
-          box-shadow: 1px 0 0 #e6e6e6;
+  -webkit-bolivewire:components.shadow: 1px 0 0 #e6e6e6;
+          bolivewire:components.shadow: 1px 0 0 #e6e6e6;
 }
 .flatpickr-weekwrapper .flatpickr-weekday {
   float: none;
@@ -638,7 +638,7 @@ span.flatpickr-weekday {
 .flatpickr-weekwrapper span.flatpickr-day:hover {
   display: block;
   width: 100%;
-  max-width: none;
+  malivewire:components.width: none;
   color: rgba(57,57,57,0.3);
   background: transparent;
   cursor: default;
@@ -650,15 +650,15 @@ span.flatpickr-weekday {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-bolivewire:components.sizing: border-box;
+          bolivewire:components.sizing: border-box;
   overflow: hidden;
 }
 .flatpickr-rContainer {
   display: inline-block;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-bolivewire:components.sizing: border-box;
+          bolivewire:components.sizing: border-box;
 }
 .flatpickr-time {
   text-align: center;
@@ -666,9 +666,9 @@ span.flatpickr-weekday {
   display: block;
   height: 0;
   line-height: 40px;
-  max-height: 40px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  malivewire:components.height: 40px;
+  -webkit-bolivewire:components.sizing: border-box;
+          bolivewire:components.sizing: border-box;
   overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
@@ -681,7 +681,7 @@ span.flatpickr-weekday {
   clear: both;
 }
 .flatpickr-time .numInputWrapper {
-  -webkit-box-flex: 1;
+  -webkit-bolivewire:components.flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -703,8 +703,8 @@ span.flatpickr-weekday {
 }
 .flatpickr-time input {
   background: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  -webkit-bolivewire:components.shadow: none;
+          bolivewire:components.shadow: none;
   border: 0;
   border-radius: 0;
   text-align: center;
@@ -715,8 +715,8 @@ span.flatpickr-weekday {
   color: #393939;
   font-size: 14px;
   position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-bolivewire:components.sizing: border-box;
+          bolivewire:components.sizing: border-box;
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
   appearance: textfield;
@@ -745,7 +745,7 @@ span.flatpickr-weekday {
       -ms-user-select: none;
           user-select: none;
   -webkit-align-self: center;
-      -ms-flex-item-align: center;
+      -ms-flelivewire:components.item-align: center;
           align-self: center;
 }
 .flatpickr-time .flatpickr-am-pm {
@@ -840,8 +840,8 @@ span.flatpickr-weekday {
     &.inRange {
       background: rgba(94, 114, 228, 0.28);
       border: none;
-      -webkit-box-shadow: -5px 0 0 #D7DCF8, 5px 0 0 #D7DCF8;
-      box-shadow: -5px 0 0 #D7DCF8, 5px 0 0 #D7DCF8;
+      -webkit-bolivewire:components.shadow: -5px 0 0 #D7DCF8, 5px 0 0 #D7DCF8;
+      bolivewire:components.shadow: -5px 0 0 #D7DCF8, 5px 0 0 #D7DCF8;
     }
 
     &:not(.selected) {
@@ -870,7 +870,7 @@ span.flatpickr-weekday {
 .flatpickr-day.endRange.startRange+.endRange:not(:nth-child(7n+1)),
 .flatpickr-day.selected.startRange+.endRange:not(:nth-child(7n+1)),
 .flatpickr-day.startRange.startRange+.endRange:not(:nth-child(7n+1)){
-  box-shadow: -10px 0 0 $primary;
+  bolivewire:components.shadow: -10px 0 0 $primary;
 }
 
 ////////////

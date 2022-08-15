@@ -10,6 +10,7 @@ class Guardian extends Model
     use HasFactory;
 
     protected $fillable = [
+        'patient_id',
         'name',
         'relationship',
         'gender',
@@ -23,7 +24,4 @@ class Guardian extends Model
         'email',
     ];
 
-    protected $hidden = [
-        'patient_id',
-    ];
 }
