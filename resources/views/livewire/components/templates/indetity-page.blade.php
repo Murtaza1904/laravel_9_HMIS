@@ -1,7 +1,7 @@
 <div x-data="{ tabs: ['Identity', 'Contact', 'Choice', 'Stats', 'Misc', 'Insurance', 'Guardian'], activeTab: 'Identity' }">
     <div class="p-3">
         <template x-for="tab in tabs">
-            <button livewire:components.on:click="activeTab = tab " x-text="tab" class='btn rounded-pill'
+            <button x-on:click="activeTab = tab " x-text="tab" class='btn rounded-pill'
                 :class="activeTab === tab ? 'btn-outline-primary' : 'btn-primary'"></button>
         </template>
     </div>
