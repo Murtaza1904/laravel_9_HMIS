@@ -16,7 +16,6 @@ class PatientRequest extends FormRequest
     public function rules():array
     {
         return[
-            'patient.id' => 'required',
             'patient.firstname' => 'required|string',
             'patient.lastname' => 'required|string',
             'patient.date_of_birth' => 'required|date',

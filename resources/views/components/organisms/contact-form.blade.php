@@ -21,7 +21,7 @@
             </div>
             <div class="col">
                 <x-molecules.select-field label="State" selectName="contact.state" errorName="contact.state"
-                    message="$message" />
+                 message="$message" />
             </div>
         </div>
         <div class="row">

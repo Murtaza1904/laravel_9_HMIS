@@ -5,8 +5,8 @@
     
     <option value="single">Single</option>
     
-    {{-- @foreach ($cities as $item)
-        <option value="" selected>Select</option>
-    @endforeach --}}
+    @foreach ($collection as $item)
+        <option value="{{ $item->id }}" selected>{{ $item->name }}</option>
+    @endforeach
 
 </select>

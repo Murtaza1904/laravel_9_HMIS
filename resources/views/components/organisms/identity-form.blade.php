@@ -1,11 +1,7 @@
 <!-- Patient Identity Form (mandatory) -->
 <div class="card-body px-0 pt-0 pb-2">
-    
-    <form class="container">
 
-        <!-- Patient id  generated from patient class-->
-        <input type="hidden" value="1" wire:model.lazy='patient.id'>
-        <!-- patient id is  empty -->
+    <form class="container">
 
         <div class="row">
 
@@ -29,9 +25,8 @@
 
             <div class="col">
                 <!-- Patient date of birth  -->
-                <x-molecules.input-field label="Date OF Birth" type="date"
-                    name="patient.date_of_birth" placeholder="Enter date of birth" errorName="patient.date_of_birth"
-                    message="{$message}" />
+                <x-molecules.input-field label="Date OF Birth" type="date" name="patient.date_of_birth"
+                    placeholder="Enter date of birth" errorName="patient.date_of_birth" message="{$message}" />
                 <!-- print error if date of birth field is empty or not date type -->
             </div>
 
@@ -40,8 +35,8 @@
 
             <div class="col">
                 <!-- Patient gender  -->
-                <x-molecules.radio-field label="Gender" radioName="patient.gender"
-                    errorName="patient.gender" message="$message" />
+                <x-molecules.radio-field label="Gender" radioName="patient.gender" errorName="patient.gender"
+                    message="$message" />
                 <!-- print error if date of gender field is empty or not date type -->
 
             </div>
@@ -50,7 +45,6 @@
                 <!-- Patient marital status  -->
                 <x-molecules.select-field label="Marital Status" selectName="patient.marital_status"
                     errorName="patient.marital_status" message="$message" />
-                    {{-- :cities="$cities" item="city" /> --}}
                 <!-- print error if marital status field is empty -->
             </div>
 

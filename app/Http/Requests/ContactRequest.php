@@ -14,7 +14,7 @@ class ContactRequest extends FormRequest
     public function rules():array
     {
         return [
-            'contact.patient_id'=>'required',
+            // 'contact.patient_id'=>'required',
             'contact.address'=>'required',
             'contact.country'=>'required',
             'contact.city'=>'required',

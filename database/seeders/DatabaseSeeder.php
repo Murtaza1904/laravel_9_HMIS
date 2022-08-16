@@ -7,7 +7,7 @@ use App\Models\User;
 use App\Models\State;
 use App\Models\Country;
 use App\Models\Language;
-use App\Models\PatientId;
+use App\Models\MaritalStatus;
 use App\Models\Religion;
 use App\Models\Relationship;
 use Illuminate\Database\Seeder;
@@ -23,6 +23,6 @@ class DatabaseSeeder extends Seeder
         Language::factory(183)->create();
         Religion::factory(43)->create();
         Relationship::factory(30)->create();
-        PatientId::factory(1)->create();
+        MaritalStatus::factory(6)->create();
     }
 }

@@ -4,7 +4,7 @@ namespace App\Http\Livewire;
 
 use App\Models\{Choice,City,State,Contact,Country,Employer,
     Guardian,Misc,Patient,PrimaryInsurance,SecondaryInsurance,
-    Stats,TertiaryInsurance,User,Language,Religion,Relationship,InsuranceAgent, PatientId};
+    Stats,TertiaryInsurance,User,Language,Religion,Relationship,InsuranceAgent};
 use Livewire\WithPagination;
 use App\Http\Requests\{PatientRequest,ContactRequest,ChoiceRequest,EmployerRequest,StatsRequest,MiscRequest,GuardianRequest,PrimaryInsuranceRequest,SecondaryInsuranceRequest,TertiaryInsuranceRequest};
 use Livewire\Component;
@@ -36,11 +36,9 @@ class Patients extends Component
     public PrimaryInsurance $primary_insurance;
     public SecondaryInsurance $secondary_insurance;
     public TertiaryInsurance $tertiary_insurance;
-    public PatientId $patient_id;
 
 
-
-    public function mount(PatientId $patient_id,Patient $patient, Contact $contact, Choice $choice, Employer $employer, Stats $stats, Guardian $guardian, PrimaryInsurance $primary_insurance, SecondaryInsurance $secondary_insurance, TertiaryInsurance $tertiary_insurance)
+    public function mount(Patient $patient, Contact $contact, Choice $choice, Employer $employer, Stats $stats, Guardian $guardian, PrimaryInsurance $primary_insurance, SecondaryInsurance $secondary_insurance, TertiaryInsurance $tertiary_insurance)
     {
         $this->countries = Country::orderBy('name')->get();
         $this->cities = City::orderBy('name')->get();
@@ -49,7 +47,6 @@ class Patients extends Component
         $this->religions = Religion::orderBy('name')->get();
         $this->relationships = Relationship::orderBy('name')->get();
         $this->users = User::get();
-        $this->patient_id = $patient_id;
         $this->patient = $patient;
         $this->contact = $contact;
         $this->choice = $choice;
@@ -61,13 +58,14 @@ class Patients extends Component
         $this->tertiary_insurance = $tertiary_insurance;
     }
 
-    // if($this->identity_checkbox == 'checked' && $this->contact_checkbox == 'checked' && $this->employer_checkbox == 'checked' && $this->guardian_checkbox == 'checked' && $this->stats_checkbox == 'checked' && $this->choice_checkbox == 'checked' && $this->misc_checkbox == 'checked' && $this->primary_insurance_checkbox == 'checked' && $this->secondary_insurance_checkbox == 'checked' && $this->tertiary_insurance_checkbox == 'checked')
-    // {
     public function rules()
     {
-        return  (new PatientRequest())->rules();
-            // return array_merge(
-                // (new ContactRequest())->rules();
+        // return array_merge(
+            
+            return (new PatientRequest())->rules();
+            //   $this->identity_checkbox == 'checked' ?  (new PatientRequest())->rules() : array(),
+            //   $this->contact_checkbox == 'checked' ?  (new ContactRequest())->rules() : array(),
+                // (new ContactRequest())->rules(),
                 // (new ChoiceRequest())->rules(),
                 // (new EmployerRequest())->rules(),
                 // (new StatsRequest())->rules(),
@@ -93,20 +91,15 @@ class Patients extends Component
              ->paginate(10));
     }
 
-    public function patientIdGenerator()
-    {
-        $this->patient_id ++;
-    }
-
     public function store()
     {
         if($this->identity_checkbox == 'checked')
         {
             $this->validate();
+            return (new PatientRequest())->rules();
             $this->patient->save();
             session()->flash('success','Created Successfully.');
             $this->resetInputFields();
-            $this->patientIdGenerator();
         }
         if($this->contact_checkbox == 'checked')
         {
